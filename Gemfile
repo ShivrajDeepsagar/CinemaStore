@@ -13,6 +13,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'foundation-rails'
 gem 'devise'
+gem 'redis', '~>3.2'
+gem "hiredis", "~> 0.6.0"
+
 
 # gem 'redis', '~> 3.0'
 
