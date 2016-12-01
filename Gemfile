@@ -15,8 +15,9 @@ gem 'foundation-rails'
 gem 'devise'
 gem 'redis', '~>3.2'
 gem "hiredis", "~> 0.6.0"
-
-
+gem 'braintree'
+gem 'figaro'
+gem 'gon'
 # gem 'redis', '~> 3.0'
 
 # gem 'capistrano-rails', group: :development

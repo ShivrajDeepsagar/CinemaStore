@@ -6,7 +6,10 @@
 
     <title><%= content_for?(:title) ? yield(:title) : "MovieStore - Online movies" %></title>
     <link rel="shortcut icon" href="<%=asset_path("logo.png")%>" >
+    <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
 
+
+    <%= include_gon %>
 
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
