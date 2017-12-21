@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a online movie store where you can pay and watch movies online.
 
-Things you may want to cover:
+Built using rails 5.0.0.1  and ruby 2.3.
 
-* Ruby version
+The payment gateway is integrated using Braintree/sandbox test development environment. Tested for successful test-transaction.
 
-* System dependencies
+To run this application you will a REDIS server running on your instance. 
 
-* Configuration
+Running instructions:
 
-* Database creation
+1. bundle install
+2. rake db:create
+3. rake db:migrate
+4. rake db:seed
+5. rails s
 
-* Database initialization
+You can register as a new user and select the movie you want to watch and checkout using the following braintree/sandbox
+test transacion credentials
 
-* How to run the test suite
+card no: 378282246310005
+expirty: 05/22
 
-* Services (job queues, cache servers, search engines, etc.)
+Once you complete the transaction you should see a success message.
 
-* Deployment instructions
+You can use your own braintree keys to make sure about the transactions. You can do that by changing the keys in config/initializers/braintree.rb. Then you can check the test transaction on your braintree dashboard.
 
-* ...
+
+
